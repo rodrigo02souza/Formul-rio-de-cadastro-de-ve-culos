@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Véiculos</title>
+  </head>
+  <body>
+    <div id="Principal" class="container mb-5">
+        <br>
+        <h1>Cadastro de veículos!</h1>
+        <!--Primeira linha do dados do cliente-->
+        <hr>
+        <h2>Dados do Cliente</h2>
+        <div class="row">
+            
+            <div class="form-group col-7">
+                <label>Nome:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite o Nome Aqui...">
+            </div>
+            <div class="form-group col-3">
+                <label>Telefone:</label>
+                <input type="text" class="form-control" id="telefone" placeholder="Digite o Telefone Aqui...">
+            </div>
+            <div class="form-group col-2">
+                <label>Data de Cadastro:</label>
+                <input type="date" class="form-control" id="dataCadastro">
+            </div>
+        </div>
+
+        <!--primeira linha dos dados do veículo-->
+        <hr>
+        <h2>Dados do veículo</h2>
+        <div class="row">
+            <div class="form-group col-2">
+                <label>Placa:</label>
+                <input type="text" class="form-control" id="placa" placeholder="Placa do veículo">
+            </div>
+            <div class="form-group col-3">
+                <label>Marca:</label>
+                <input type="text" class="form-control" id="marca" placeholder="Marca do veículo">
+            </div>
+            <div class="form-group col-3">
+                <label>Modelo:</label>
+                <input type="text" class="form-control" id="modelo" placeholder="Modelo do veículo">
+            </div>
+            <div class="form-group col-2">
+                <label>Cor:</label>
+                <input type="text" class="form-control" id="cor" placeholder="Cor do veículo">
+            </div>
+            <div class="form-group col-2">
+                <label>Km:</label>
+                <input type="number" class="form-control" id="km" placeholder="km">
+            </div>
+        </div>
+
+        <!--Segunda linha dos dados do veículo-->
+        <hr>
+        <div class="row">
+            <div class="form-check col-3" >
+                <br>
+                <div class="text-center">
+
+                    <input class="form-check-input" type="radio" name="tipo" id="nacional" value="opcao1">
+                    <label class="form-check-label mr-4" for="nacional">
+                        Nacional
+                    </label>
+
+                    <input class="form-check-input" type="radio" name="tipo" id="importado" value="opcao2">
+                    <label class="form-check-label" for="importado">
+                        Importado
+                    </label>
+
+                </div>
+                
+            </div>
+            <div class="form-group col-5">
+                
+                <label for="combustivel">Tipo de combustível:</label>
+                    <select class="form-control" id="combustivel">
+                    <option>Gasolina</option>
+                    <option>Alcool</option>
+                    <option>Flex</option>
+                    <option>Diesel</option>
+                    <option>Elétrico</option>
+                    <option>Gás</option>
+                </select>
+            </div>
+            <div class="form-group col-2">
+                <label>Cilindros:</label>
+                <input type="number" class="form-control" id="telefone" placeholder="Cilindros">
+            </div>
+            <div class="form-group col-2 ">
+                <label>Ano Fab.</label>
+                <input type="number" class="form-control" id="anoFab" placeholder="Ano de Fab">
+            </div>
+        </div>
+
+        <!--Terceira linha dos dados do veículo-->
+        <hr>
+        <div class="row">
+            <div class="form-group col-3">
+                <label>Altura(m):</label>
+                <input type="number" class="form-control" id="altura" placeholder="Altura">
+            </div>
+            <div class="form-group col-2">
+                <label>Largura(m):</label>
+                <input type="number" class="form-control" id="largura" placeholder="Largura">
+            </div>
+            <div class="form-group col-3">
+                <label>Comprimento(m):</label>
+                <input type="number" class="form-control" id="Comprimento" placeholder="Comprimento">
+            </div>
+            <div class="form-group col-2">
+                <label>Peso(Kg):</label>
+                <input type="number" class="form-control" id="peso" placeholder="Peso">
+            </div>
+            <div class="form-group col-2">
+                <label>Qtd.Assentos:</label>
+                <input type="number" class="form-control" id="km" placeholder="Qtd.Assentos">
+            </div>
+        </div>
+
+        <!--Quarta linha dos dados do veículo-->
+        <hr>
+        <div class="row">
+            <div class="form-check col-3 offset-1">
+                <label>Acessórios</label>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="arcondicionado">
+                <label class="form-check-label" for="arcondicionado">
+                    Ar condicionado
+                </label>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="engate">
+                <label class="form-check-label" for="engate">
+                    Engate
+                </label>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="vidroEletrico">
+                <label class="form-check-label" for="vidroEletrico">
+                    Vidro elétrico
+                </label>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="alrme">
+                <label class="form-check-label" for="alarme">
+                    Alarme
+                </label>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="bagageiro">
+                <label class="form-check-label" for="bagageiro">
+                    Bagageiro
+                </label>
+              </div>
+            <div class="form-group col-8">
+                <label for="infoComplementares">Informações Complementares</label>
+                <textarea class="form-control" id="infoComplementares" rows="3"></textarea>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
